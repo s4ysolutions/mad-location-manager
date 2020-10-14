@@ -75,7 +75,7 @@ afterEvaluate {
     publishing {
         publications {
             mavenPublication(MavenPublication) {
-                groupId = 'com.maddevsio.mad-location-manager'
+                groupId = 'solutions.s4y.mad-location-manager'
                 artifactId = 'mad-location-manager'
                 version = releaseVersion
 
@@ -96,15 +96,15 @@ afterEvaluate {
                     }
                     developers {
                         developer {
-                            id = 'Lezh1k'
-                            name = 'Oleg Katkov'
-                            email = 'lezh1k.vohrer@gmail.com'
+                            id = 'dsame'
+                            name = 'Serey Dolin'
+                            email = 'sergey@s4y.soolutions'
                         }
                     }
                     scm {
-                        connection = 'scm:git:git://github.com/maddevsio/mad-location-manager.git'
-                        developerConnection = 'scm:git:ssh://github.com/maddevsio/mad-location-manager.git'
-                        url = 'https://github.com/maddevsio/mad-location-manager'
+                        connection = 'scm:git:git://github.com/s4ysolutions/mad-location-manager.git'
+                        developerConnection = 'scm:git:ssh://github.com/s4ysolutions/mad-location-manager.git'
+                        url = 'https://github.com/s4ysolutions/mad-location-manager'
                     }
                 }
             }
@@ -123,14 +123,14 @@ bintray {
     pkg {
         repo = 'maven'
         name = 'mad-location-manager'
-        userOrg = 'Lezh1k'
+        userOrg = 's4ysolutions'
         description = 'This is library for GPS and Accelerometer data "fusion" with Kalman filter'
         publications = ['mavenPublication']
         licenses = ['MIT']
-        vcsUrl = 'https://github.com/maddevsio/mad-location-manager.git'
-        websiteUrl = 'https://github.com/maddevsio/mad-location-manager.git'
-        issueTrackerUrl = 'https://github.com/maddevsio/mad-location-manager/issues'
-        githubRepo = 'maddevsio/mad-location-manager'
+        vcsUrl = 'https://github.com/s4ysolutions/mad-location-manager.git'
+        websiteUrl = 'https://github.com/s4ysolutions/mad-location-manager.git'
+        issueTrackerUrl = 'https://github.com/s4ysolutions/mad-location-manager/issues'
+        githubRepo = 's4ysolutions/mad-location-manager'
         githubReleaseNotesFile = 'README.md'
         version {
             name = releaseVersion
